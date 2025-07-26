@@ -7,8 +7,10 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true,
+    unoptimized: true, // 禁用图像优化
   },
+  trailingSlash: true, // 保证 URL 以斜杠结尾
+  output: 'export', // 启用静态导出
 }
 
-export default nextConfig
+export default nextConfig;
